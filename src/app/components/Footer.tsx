@@ -62,7 +62,9 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-[var(--maroon-dark)]/80">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-[var(--saffron)]" />
-                <span>Global Gurukul Ashram, India</span>
+                <span>Jora Shiv Mondir, Monirampore, Barrackpore<br></br>
+                    Kolkata - 700120, West Bengal
+                India</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-[var(--maroon-dark)]/80">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-[var(--saffron)]" />
