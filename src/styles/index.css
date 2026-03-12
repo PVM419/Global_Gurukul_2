@@ -1,0 +1,67 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Glassmorphism & Devotional Effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 153, 51, 0.2);
+}
+
+/* Smooth scrolling for sacred experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sandalwood-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--saffron), var(--temple-gold));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--saffron-dark), var(--saffron));
+}
+
+/* Golden glow animation */
+@keyframes golden-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.golden-glow {
+  animation: golden-glow 3s ease-in-out infinite;
+}
+
+/* ---------- */
+
+/* 3D realistic globe spin */
+.earth-wrapper {
+  display: inline-block;
+  perspective: 800px;
+}
+
+.earth-globe {
+  animation: earthRotate 20s linear infinite;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+/* rotate like real Earth */
+@keyframes earthRotate {
+  0%   { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
